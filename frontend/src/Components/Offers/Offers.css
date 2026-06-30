@@ -1,0 +1,148 @@
+
+
+.offers {
+  width: 70%;
+  margin: 0px auto;
+  padding: 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: linear-gradient(180deg, #e68eec, #e1ffea22 60%);
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offers-left h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.offers-left p {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.offers-left button {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background: purple;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.offers-left button:hover {
+  background: #6a0dad;
+}
+
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img {
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+
+}
+
+
+@media (max-width: 1280px) {
+  .offers {
+    width: 80%;
+    padding: 30px 40px;
+  }
+
+  .offers-left h1 {
+    font-size: 40px;
+  }
+
+  .offers-left p {
+    font-size: 16px;
+  }
+
+  .offers-right img {
+    max-width: 280px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .offers {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .offers-left h1 {
+    font-size: 32px;
+  }
+
+  .offers-left p {
+    font-size: 15px;
+  }
+
+  .offers-left button {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .offers-right img {
+    max-width: 240px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .offers {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .offers-right {
+    order: -1;
+  }
+
+  .offers-left h1 {
+    font-size: 24px;
+  }
+
+  .offers-left p {
+    font-size: 14px;
+  }
+
+  .offers-left button {
+    width: 140px;
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .offers-right img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,140 @@
+/* .list-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 6px;
+  
+    background: white;
+}
+.listproduct-format-main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px;
+    color: purple;
+    font-size: 15px;
+    font-weight: 600;
+}
+.listproduct-format{
+    align-items: center;
+    font-weight: 500;
+}
+.listproduct-product-icon{
+    height: 80px;
+}
+.listproduct-remove-icon{
+    cursor: pointer;
+    margin: auto;
+}
+.listproduct-allproducts{
+    overflow-y: auto;
+}
+@media(max-width:800px){
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+    .listproduct-format-main{
+        padding: 15px 0px;
+        color: purple;
+        font-size: 12px;
+    }
+    .listproduct-product-icon{
+        height: 60px;
+    }
+} */
+ .list-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 40px;
+    margin: 20px;
+    border-radius: 8px;
+    background: white;
+    box-sizing: border-box;
+}
+
+/* Header + Row Layout */
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 1fr 1fr 80px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 0;
+    color: purple;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Product Row */
+.listproduct-format {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Image */
+.listproduct-product-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Remove Icon */
+.listproduct-remove-icon {
+    width: 20px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+/* Scroll Area */
+.listproduct-allproducts {
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* Divider */
+.listproduct-allproducts hr {
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+/* Hover Effect */
+.listproduct-format:hover {
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .list-product {
+        width: 95%;
+        padding: 10px 20px;
+        margin: 10px auto;
+    }
+
+    .listproduct-format-main {
+        grid-template-columns: 60px 2fr 1fr 1fr 1fr 60px;
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
+    .listproduct-product-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .listproduct-remove-icon {
+        width: 16px;
+    }
+}
